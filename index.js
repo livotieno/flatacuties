@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
     fetch ("http://localhost:3000/characters")
      .then(response => response.json())
      .then((data) =>{
-     //console.log(data);
+     console.log(data);
      displayCharacters (data)
 
      })
@@ -36,13 +36,17 @@ function handleSpanclick(e,element){
    const votesForm = document.querySelector("#votes-form")
    votesForm.addEventListener("submit",(e)=>{
     handleSubmission(e, voteCount)
-    
-
-   })
+   ntainer.appendChild(resetButton);
+  })
 }
-
 function handleSubmission(e, voteCount){
     e.preventDefault()
   const inputValue = document.querySelector("#votes").value
   voteCount.innerHTML = inputValue
 }
+
+
+function resetVotes(){
+
+}
+document.addEventListener("DOMContentLoaded", fetchdata);
